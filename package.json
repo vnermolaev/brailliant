@@ -2,7 +2,7 @@
     "name": "brailliant",
     "displayName": "Brailliant",
     "description": "Enhance your code with braille art comments",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "quicky84",
     "engines": {
         "vscode": "^1.19.0"
