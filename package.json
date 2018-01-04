@@ -3,7 +3,7 @@
     "displayName": "Brailliant",
     "description": "Enhance your code with braille art comments",
     "version": "0.0.1",
-    "publisher": "Victor Ermolaev",
+    "publisher": "quicky84",
     "engines": {
         "vscode": "^1.19.0"
     },
