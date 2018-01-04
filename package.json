@@ -3,12 +3,23 @@
     "displayName": "Brailliant",
     "description": "Enhance your code with braille art comments",
     "version": "0.0.1",
-    "publisher": "A",
+    "publisher": "Victor Ermolaev",
     "engines": {
         "vscode": "^1.19.0"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/quicky84/brailliant.git"
+    },
+    "homepage": "https://github.com/quicky84/brailliant/blob/master/README.md",
+    "icon": "images/icon.png",
     "categories": [
         "Other"
+    ],
+    "keywords": [
+        "comment",
+        "braille",
+        "art"
     ],
     "activationEvents": [
         "*"
