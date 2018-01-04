@@ -13,6 +13,10 @@
     },
     "homepage": "https://github.com/quicky84/brailliant/blob/master/README.md",
     "icon": "images/icon.png",
+    "galleryBanner": {
+        "color": "#C80000",
+        "theme": "light"
+    },
     "categories": [
         "Other"
     ],
