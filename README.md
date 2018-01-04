@@ -1,65 +1,24 @@
-# brailliant README
+# Brailliant 
 
-This is the README for your extension "brailliant". After writing up a brief description, we recommend including the following sections.
+Brailliant is a VS Code extension allowing you to document the code with images rendered as Braille art,
+i.e., art made up of Braille characters.
 
-## Features
+## Workflow
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+In the code where you wish to insert some brailliant comment write
 
-For example if there is an image subfolder under your extension project workspace:
+```
+// <ba "arrival.jpg" s=0.2 wc=0.4>
+```
 
-\!\[feature X\]\(images/feature-x.png\)
+This line instructs the extension to pick up `arrival.jpg` in the same directory as the file you're documenting,
+scale it to `0.2` of its original size, cut some shades of gray and insert the art directly after the `ba`-tag.
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+![](https://github.com/quicky84/brailliant/workflow.gif)
 
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on OSX or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on OSX or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (OSX) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+## Parameters
+- `w` Resize image to width `w`, other side, if not specified, is resized proportionally.
+- `h` Resize image to height `w`, other side, if not specified, is resized proportionally.
+- `s` Rescale image. Scale takes precedence over `w` and `h`.
+- `wc` White cutoff, `0` represents white, `1` represents black, shades of gray below `wc` will be dropped.
+- `ws` Whitespace, any alphanumeric symbol. By default `ws` is the empty Braille glyph.
