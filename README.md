@@ -14,7 +14,7 @@ In the code where you wish to insert some brailliant comment write
 This line instructs the extension to pick up `arrival.jpg` in the same directory as the file you're documenting,
 scale it to `0.2` of its original size, cut some shades of gray and insert the art directly after the `ba`-tag.
 
-![](./images/workflow.gif)
+![](https://github.com/quicky84/brailliant/blob/master/images/workflow.gif)
 
 ## Parameters
 - `w` Resize image to width `w`, other side, if not specified, is resized proportionally.
